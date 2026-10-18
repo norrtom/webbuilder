@@ -1,239 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Something new is on the way." />
-    <title>Coming Soon — Webbuilder</title>
+    <meta name="description" content="Tilaa yrityksen verkkosivut alkaen 299 € (alv 0 %). Selkeät kotisivut, lomakkeet ja julkaisu. Laske hinta ja lähetä tilaus Webbuilderilla." />
+    <title>Yrityksen verkkosivut alkaen 299 € | Webbuilder</title>
+    <link rel="canonical" href="https://webbuilder.tom-1e4.workers.dev/" />
+    <meta property="og:locale" content="fi_FI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yrityksen verkkosivut alkaen 299 € | Webbuilder" />
+    <meta property="og:description" content="Tilaa yrityksen verkkosivut alkaen 299 € (alv 0 %). Selkeät kotisivut, lomakkeet ja julkaisu. Laske hinta ja lähetä tilaus Webbuilderilla." />
+    <meta property="og:url" content="https://webbuilder.tom-1e4.workers.dev/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      :root {
-        color-scheme: dark;
-        --bg: #0a0a0c;
-        --text: #f4f2ef;
-        --muted: rgba(244, 242, 239, 0.55);
-        --accent: #c9a962;
-        --glow: rgba(201, 169, 98, 0.35);
-      }
-
-      html,
-      body {
-        margin: 0;
-        min-height: 100%;
-      }
-
-      body {
-        font-family: "DM Sans", system-ui, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      .page {
-        position: relative;
-        min-height: 100dvh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2.5rem 1.5rem;
-        overflow: hidden;
-      }
-
-      .page::before {
-        content: "";
-        position: absolute;
-        inset: -40%;
-        background:
-          radial-gradient(ellipse 50% 40% at 50% 0%, var(--glow), transparent 70%),
-          radial-gradient(circle at 80% 90%, rgba(80, 100, 140, 0.15), transparent 45%),
-          radial-gradient(circle at 10% 70%, rgba(201, 169, 98, 0.08), transparent 40%);
-        pointer-events: none;
-      }
-
-      .grain {
-        position: absolute;
-        inset: 0;
-        opacity: 0.04;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-        pointer-events: none;
-      }
-
-      main {
-        position: relative;
-        z-index: 1;
-        max-width: 36rem;
-        text-align: center;
-      }
-
-      .eyebrow {
-        font-size: 0.75rem;
-        font-weight: 500;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--accent);
-        margin: 0 0 1.25rem;
-      }
-
-      h1 {
-        font-family: "Instrument Serif", Georgia, serif;
-        font-size: clamp(2.75rem, 8vw, 4.25rem);
-        font-weight: 400;
-        line-height: 1.08;
-        margin: 0 0 1.25rem;
-        letter-spacing: -0.02em;
-      }
-
-      h1 em {
-        font-style: italic;
-        color: var(--muted);
-      }
-
-      .lead {
-        font-size: 1.0625rem;
-        color: var(--muted);
-        margin: 0 0 2.5rem;
-        max-width: 28rem;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .notify {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        justify-content: center;
-        align-items: stretch;
-        max-width: 22rem;
-        margin: 0 auto;
-      }
-
-      .notify input {
-        flex: 1 1 12rem;
-        min-width: 0;
-        padding: 0.875rem 1rem;
-        border: 1px solid rgba(244, 242, 239, 0.12);
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.04);
-        color: var(--text);
-        font: inherit;
-        outline: none;
-        transition: border-color 0.2s, box-shadow 0.2s;
-      }
-
-      .notify input::placeholder {
-        color: rgba(244, 242, 239, 0.35);
-      }
-
-      .notify input:focus {
-        border-color: rgba(201, 169, 98, 0.5);
-        box-shadow: 0 0 0 3px rgba(201, 169, 98, 0.12);
-      }
-
-      .notify button {
-        padding: 0.875rem 1.5rem;
-        border: none;
-        border-radius: 999px;
-        background: var(--accent);
-        color: #0a0a0c;
-        font: inherit;
-        font-weight: 500;
-        cursor: pointer;
-        transition: transform 0.15s, filter 0.15s;
-      }
-
-      .notify button:hover {
-        filter: brightness(1.08);
-      }
-
-      .notify button:active {
-        transform: scale(0.98);
-      }
-
-      .hint {
-        margin-top: 1rem;
-        font-size: 0.8125rem;
-        color: rgba(244, 242, 239, 0.35);
-      }
-
-      .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-      }
-
-      footer {
-        position: relative;
-        z-index: 1;
-        margin-top: auto;
-        padding-top: 3rem;
-        font-size: 0.8125rem;
-        color: rgba(244, 242, 239, 0.3);
-      }
-
-      @media (prefers-reduced-motion: no-preference) {
-        main {
-          animation: fade 1s ease-out both;
-        }
-
-        @keyframes fade {
-          from {
-            opacity: 0;
-            transform: translateY(12px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Webbuilder","url":"https://webbuilder.tom-1e4.workers.dev/","areaServed":"Finland","priceRange":"299€+","description":"Yrityksen verkkosivut alkaen 299 € (alv 0 %)."}</script>
   </head>
   <body>
-    <div class="page">
-      <div class="grain" aria-hidden="true"></div>
-      <main>
-        <p class="eyebrow">Webbuilder</p>
-        <h1>Something <em>beautiful</em> is coming.</h1>
-        <p class="lead">
-          We’re crafting a new way to build on the web. Check back soon — or leave
-          your email and we’ll let you know when we launch.
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Web<span>builder</span></a>
+        <div class="header-actions">
+          <nav class="nav" aria-label="Pikavalikko">
+            <a class="nav-link-hide-mobile" href="palvelut.html">Palvelut</a>
+            <a class="nav-link-hide-mobile" href="hinnasto.html">Hinnasto</a>
+            <a href="hinnasto.html#tilaa" class="btn btn-primary">Tilaa sivut</a>
+          </nav>
+          <button
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="site-menu"
+          >
+            <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="menu-toggle-label visually-hidden">Avaa valikko</span>
+          </button>
+        </div>
+      </div>
+      <div id="site-menu" class="site-menu" hidden>
+        <div class="container site-menu-inner">
+          <nav aria-label="Sivusto">
+            <h2>Sivusto</h2>
+            <ul>
+              <li><a href="index.html">Etusivu</a></li>
+              <li><a href="palvelut.html">Palvelut</a></li>
+              <li><a href="ominaisuudet.html">Ominaisuudet</a></li>
+              <li><a href="hinnasto.html">Hinnasto</a></li>
+              <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+              <li class="menu-cta"><a class="btn btn-primary" href="hinnasto.html#tilaa">Tilaa sivut</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="Kotisivut toimialoittain">
+            <h2>Kotisivut toimialoittain</h2>
+            <ul>
+              <li><a href="kotisivut-yritykselle.html">Kotisivut yritykselle</a></li>
+              <li><a href="kotisivut-ravintolalle.html">Kotisivut ravintolalle</a></li>
+              <li><a href="kotisivut-kampaamolle.html">Kotisivut kampaamolle</a></li>
+              <li><a href="kotisivut-hammaslaakarille.html">Kotisivut hammaslääkärille</a></li>
+              <li><a href="kotisivut-kiinteistovalittajalle.html">Kotisivut kiinteistönvälittäjälle</a></li>
+              <li><a href="kotisivut-rakennusyritykselle.html">Kotisivut rakennusyritykselle</a></li>
+              <li><a href="kotisivut-lakitoimistolle.html">Kotisivut lakitoimistolle</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80" alt="" width="1600" height="900" fetchpriority="high" />
+      </div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Verkkosivut pienyrityksille</p>
+        <h1 id="hero-title">Yrityksen verkkosivut — selkeät kotisivut alkaen 299 €</h1>
+        <p class="hero-lead">
+          Rakennamme modernit, mobiiliystävälliset verkkosivut — esittely, palvelut,
+          yhteystiedot ja lomakkeet. Hinnoittelu on läpinäkyvää: alkaen 299 €, lopullinen
+          summa lasketaan tilauksessasi.
         </p>
-        <form class="notify" action="#" method="post" onsubmit="return false;">
-          <label for="email" class="visually-hidden">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="you@example.com"
-            autocomplete="email"
-          />
-          <button type="submit">Notify me</button>
-        </form>
-        <p class="hint">No spam — just one note when we’re live.</p>
-      </main>
-      <footer>&copy; <span id="year"></span> Webbuilder</footer>
-    </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+        <div class="hero-price"><strong>299 €</strong><small>alkaen · alv 0 %</small></div>
+        <div class="hero-actions">
+          <a href="hinnasto.html#tilaa" class="btn btn-primary btn-lg">Laske hinta ja tilaa</a>
+          <a href="palvelut.html" class="btn btn-outline btn-lg">Tutustu palveluihin</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="palvelu">
+      <div class="container">
+        <header class="section-header center">
+          <p class="section-eyebrow">Palvelu</p>
+          <h2>Kaikki olennainen paketissa</h2>
+          <p>Peruspaketti sopii palveluyritykselle, toimistolle tai paikalliselle liikkeelle. Laajennat sivumäärää ja toimintoja tilauslomakkeella.</p>
+        </header>
+        <div class="grid-3">
+          <article class="card"><div class="card-icon" aria-hidden="true">◇</div><h3>Responsiivinen ulkoasu</h3><p>Sivusto toimii puhelimessa, tabletissa ja tietokoneessa. Typografia ja värit räätälöidään brändiisi.</p></article>
+          <article class="card"><div class="card-icon" aria-hidden="true">✉</div><h3>Yhteydenottolomakkeet</h3><p>Viestit tulevat sähköpostiisi. Ensimmäinen lomake kuuluu perushintaan; lisälomakkeet hinnoitellaan erikseen.</p></article>
+          <article class="card"><div class="card-icon" aria-hidden="true">⚡</div><h3>Nopea julkaisu</h3><p>Staattinen toteutus on kevyt. Julkaisu Cloudflare-verkkoon — luotettava hosting ilman yllätyksiä.</p></article>
+        </div>
+        <p style="text-align:center;margin-top:2rem"><a class="btn btn-outline" href="ominaisuudet.html">Katso kaikki ominaisuudet</a></p>
+      </div>
+    </section>
+
+    <section id="toimialat" class="section-alt">
+      <div class="container">
+        <header class="section-header center">
+          <p class="section-eyebrow">Toimialat</p>
+          <h2>Kotisivut juuri sinun alallesi</h2>
+          <p>Lue, mitä hyvät kotisivut sisältävät eri toimialoilla — ja tilaa valmis paketti hinnaston kautta.</p>
+        </header>
+        <div class="example-grid">
+          <article class="example-card">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=80" alt="Toimistotyötä" width="700" height="438" loading="lazy" />
+            <div class="example-card-body">
+              <h3>Kotisivut yritykselle</h3>
+              <p>Luotettava esittely, palvelut ja yhteydenotto. Perusta, josta asiakas löytää sinut.</p>
+              <a href="kotisivut-yritykselle.html">Lue lisää →</a>
+            </div>
+          </article>
+          <article class="example-card">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80" alt="Ravintolan pöytä" width="700" height="438" loading="lazy" />
+            <div class="example-card-body">
+              <h3>Kotisivut ravintolalle</h3>
+              <p>Menu, aukioloajat, sijainti ja varauspyyntö — sivut, jotka tuovat pöytävarauksia.</p>
+              <a href="kotisivut-ravintolalle.html">Lue lisää →</a>
+            </div>
+          </article>
+          <article class="example-card">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=80" alt="Kampaamo" width="700" height="438" loading="lazy" />
+            <div class="example-card-body">
+              <h3>Kotisivut kampaamolle</h3>
+              <p>Hinnasto, töiden kuvat ja ajanvarauslomake. Sivut, jotka näyttävät osaamisen.</p>
+              <a href="kotisivut-kampaamolle.html">Lue lisää →</a>
+            </div>
+          </article>
+          <article class="example-card">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80" alt="Hammaslääkärin vastaanotto" width="700" height="438" loading="lazy" />
+            <div class="example-card-body">
+              <h3>Kotisivut hammaslääkärille</h3>
+              <p>Luottamusta herättävä klinikkasivusto: palvelut, vastaanotto ja ajanvaraus.</p>
+              <a href="kotisivut-hammaslaakarille.html">Lue lisää →</a>
+            </div>
+          </article>
+          <article class="example-card">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=700&q=80" alt="Asunto" width="700" height="438" loading="lazy" />
+            <div class="example-card-body">
+              <h3>Kotisivut kiinteistönvälittäjälle</h3>
+              <p>Kohdekuvat, alue-esittely ja yhteydenotto. Sivut, jotka tukevat myyntiä.</p>
+              <a href="kotisivut-kiinteistovalittajalle.html">Lue lisää →</a>
+            </div>
+          </article>
+          <article class="example-card">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80" alt="Rakennustyömaa" width="700" height="438" loading="lazy" />
+            <div class="example-card-body">
+              <h3>Kotisivut rakennusyritykselle</h3>
+              <p>Referenssit, palvelut ja tarjouspyyntö — sivusto, joka voittaa urakoita.</p>
+              <a href="kotisivut-rakennusyritykselle.html">Lue lisää →</a>
+            </div>
+          </article>
+        </div>
+        <p style="text-align:center;margin-top:1.75rem"><a href="kotisivut-lakitoimistolle.html">Kotisivut lakitoimistolle →</a></p>
+      </div>
+    </section>
+
+    <section id="hinnat">
+      <div class="container">
+        <div class="pricing-box">
+          <div>
+            <h2>Läpinäkyvä hinnoittelu</h2>
+            <p>Peruspaketti 299 € (alv 0 %). Lisäsivu 49 €, lisälomake 39 €. Esimerkkihinnat eri sivustotyypeille löydät hinnastosta.</p>
+          </div>
+          <div>
+            <div class="price-tag">299 €<small>minimihinta · alv 0 %</small></div>
+            <a href="hinnasto.html" class="btn btn-outline" style="margin-top:1rem;border-color:rgba(255,255,255,.5);color:#fff">Avaa hinnasto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="logo" href="index.html">Web<span>builder</span></a>
+            <p>
+              Yksinkertaiset yrityksen verkkosivut selkeällä hinnoittelulla.
+              Suunnittelu, toteutus ja julkaisu yhdestä paikasta.
+            </p>
+          </div>
+          <div>
+            <h4>Sivusto</h4>
+            <ul>
+              <li><a href="palvelut.html">Palvelut</a></li>
+              <li><a href="ominaisuudet.html">Ominaisuudet</a></li>
+              <li><a href="hinnasto.html">Hinnasto</a></li>
+              <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kotisivut toimialoittain</h4>
+            <ul>
+              <li><a href="kotisivut-yritykselle.html">Yritykselle</a></li>
+              <li><a href="kotisivut-ravintolalle.html">Ravintolalle</a></li>
+              <li><a href="kotisivut-kampaamolle.html">Kampaamolle</a></li>
+              <li><a href="kotisivut-hammaslaakarille.html">Hammaslääkärille</a></li>
+              <li><a href="kotisivut-kiinteistovalittajalle.html">Kiinteistönvälittäjälle</a></li>
+              <li><a href="kotisivut-rakennusyritykselle.html">Rakennusyritykselle</a></li>
+              <li><a href="kotisivut-lakitoimistolle.html">Lakitoimistolle</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Yhteys</h4>
+            <ul>
+              <li><a href="hinnasto.html#tilaa">Tilauslomake</a></li>
+              <li><a href="mailto:tom@performed.fi">tom@performed.fi</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Webbuilder</span>
+          <span>Kuvat: <a href="https://unsplash.com">Unsplash</a></span>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/site.js"></script>
+    
   </body>
 </html>

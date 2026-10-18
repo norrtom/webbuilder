@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webbuilder.tom-1e4.workers.dev/sitemap.xml
