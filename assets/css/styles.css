@@ -549,8 +549,9 @@ section {
 }
 
 .field textarea {
-  min-height: 5rem;
+  min-height: 9.5rem;
   resize: vertical;
+  line-height: 1.5;
 }
 
 .checkbox-grid {
@@ -660,6 +661,7 @@ section {
 
 .order-form .btn-primary {
   width: 100%;
+  margin-top: 1.25rem;
 }
 
 .form-success {
