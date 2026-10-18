@@ -1,0 +1,9 @@
+{
+  "name": "webbuilder",
+  "compatibility_date": "2026-10-18",
+  "assets": {
+    "directory": "./"
+  },
+  "preview_urls": true,
+  "previews": {}
+}

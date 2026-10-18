@@ -7,7 +7,6 @@
     extraForm: 39,
     addons: {
       seo: { label: "SEO-perusoptimointi", price: 89 },
-      blog: { label: "Blogi / uutiset", price: 79 },
       gallery: { label: "Kuvagalleria", price: 59 },
       booking: { label: "Varaus- tai ajanvarauslomake", price: 69 },
       multilang: { label: "Kaksikielinen sivusto (FI + EN)", price: 149 },
