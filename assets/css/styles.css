@@ -949,6 +949,7 @@ body.menu-open {
 .site-menu a.btn-primary:hover {
   color: #fff;
   display: inline-flex;
+  padding: 0.95rem 1.75rem;
 }
 
 .nav-dropdown {
