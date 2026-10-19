@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex,follow"/>
+<meta name="description" content="Varaa aika kampaamoon — Studio Lumi Tampere."/>
+<title>Ajanvaraus | Studio Lumi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="wb-demo-banner">
+  <div class="wb-demo-banner-inner">
+    <p><strong>Esimerkkisivusto</strong> · Näin voisi näyttää kampaamopaketti (4 sivua, galleria, ajanvaraus). Hintaesimerkki <strong>476 €</strong> (alv 0 %). <a href="https://webbuilder.tom-1e4.workers.dev/hinnasto.html#tilaa">Tilaa vastaava Webbuilderilta →</a></p>
+    <a class="wb-demo-back" href="../../kotisivut-kampaamolle.html">← Takaisin esittelysivulle</a>
+  </div>
+</div><header class="site-header"><div class="wrap header-row">
+<a class="logo" href="index.html">Studio Lumi</a>
+<nav aria-label="Päävalikko"><a href="index.html">Etusivu</a><a href="palvelut.html">Palvelut & hinnasto</a><a href="galleria.html">Galleria</a><a href="ajanvaraus.html" aria-current="page">Ajanvaraus</a></nav>
+</div></header>
+<main class="wrap section" style="text-align:center">
+  <h1 class="page-title">Ajanvaraus</h1>
+  <p class="muted" style="max-width:28rem;margin:0 auto 1.5rem">Kerro toiveesi ja sopiva ajankohta. Palaamme vahvistukseen saman päivän aikana.</p>
+  <form class="form" action="#" method="get" onsubmit="event.preventDefault();alert('Esimerkkilomake — tilaa oikeat sivut Webbuilderilta.');" style="text-align:left">
+    <div><label for="n">Nimi *</label><input id="n" required/></div>
+    <div><label for="p">Puhelin *</label><input id="p" type="tel" required/></div>
+    <div><label for="s">Palvelu</label>
+      <select id="s"><option>Leikkaus</option><option>Väri</option><option>Balayage</option><option>Kampaus</option></select>
+    </div>
+    <div><label for="a">Toivottu aika</label><input id="a" placeholder="esim. pe 14–16"/></div>
+    <div><label for="m">Lisätiedot</label><textarea id="m"></textarea></div>
+    <button class="btn" type="submit">Lähetä varauspyyntö</button>
+  </form>
+  <p class="muted" style="margin-top:2rem">Tai soita +358 44 987 6543</p>
+</main>
+<footer class="site-footer"><div class="wrap">
+<p><strong>Studio Lumi</strong> · Hämeenpuisto 8, Tampere · ma–pe 10–18, la 10–15</p>
+<p>Esimerkkikampaamo Webbuilder-demoa varten. <a href="https://webbuilder.tom-1e4.workers.dev/hinnasto.html#tilaa">Tilaa omat sivut</a></p>
+</div></footer></body></html>

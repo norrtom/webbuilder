@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex,follow"/>
+<meta name="description" content="Varaa kartoitus tai lähetä viesti."/>
+<title>Yhteystiedot | Asianajotoimisto Meri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="wb-demo-banner">
+  <div class="wb-demo-banner-inner">
+    <p><strong>Esimerkkisivusto</strong> · Näin voisi näyttää lakitoimiston paketti (6 sivua, SEO, FI+EN, sisältö). Hintaesimerkki <strong>883 €</strong> (alv 0 %). <a href="https://webbuilder.tom-1e4.workers.dev/hinnasto.html#tilaa">Tilaa vastaava Webbuilderilta →</a></p>
+    <a class="wb-demo-back" href="../../kotisivut-lakitoimistolle.html">← Takaisin esittelysivulle</a>
+  </div>
+</div><header class="site-header"><div class="wrap header-row">
+<a class="logo" href="index.html">Asianajotoimisto Meri</a>
+<nav aria-label="Päävalikko"><a href="index.html">Etusivu</a><a href="oikeudenalat.html">Oikeudenalat</a><a href="tiimi.html">Tiimi</a><a href="palkkiot.html">Palkkiot</a><a href="yhteystiedot.html" aria-current="page">Yhteystiedot</a><span class="lang"><a href="index.html" aria-current="page">FI</a> | <a href="en/index.html">EN</a></span></nav>
+</div></header>
+<main class="wrap section">
+  <div class="split">
+    <div>
+      <h1 class="page-title">Yhteystiedot</h1>
+      <p class="muted">Asianajotoimisto Meri Oy<br/>Bulevardi 12 A 4, 00120 Helsinki<br/>+358 9 4242 1100<br/>toimisto@meri-example.fi</p>
+      <p class="muted">ma–pe 9–16 · ajanvarauksella myös etänä</p>
+      <p class="muted">Kuulumme Suomen Asianajajaliittoon. Salassapito ja esteellisyystarkistus kuuluvat jokaiseen toimeksiantoon.</p>
+    </div>
+    <form class="form" action="#" method="get" onsubmit="event.preventDefault();alert('Esimerkkilomake — tilaa oikeat sivut Webbuilderilta.');">
+      <h2 class="page-title" style="font-size:1.4rem">Varaa kartoitus</h2>
+      <div><label for="n">Nimi *</label><input id="n" required/></div>
+      <div><label for="e">Sähköposti *</label><input id="e" type="email" required/></div>
+      <div><label for="p">Puhelin</label><input id="p" type="tel"/></div>
+      <div><label for="t">Aihe</label>
+        <select id="t"><option>Yritys / sopimus</option><option>Työoikeus</option><option>Perheoikeus</option><option>Muu</option></select>
+      </div>
+      <div><label for="m">Lyhyt kuvaus *</label><textarea id="m" required placeholder="Älä lähetä salassa pidettäviä liitteitä tähän demoon."></textarea></div>
+      <button class="btn" type="submit">Lähetä</button>
+    </form>
+  </div>
+</main>
+<footer class="site-footer"><div class="wrap">
+<p><strong>Asianajotoimisto Meri Oy</strong> · Asianajaja · Helsinki · Y-tunnus 5678901-2</p>
+<p style="color:#7a8a80">Esimerkkitoimisto Webbuilder-demoa varten. <a href="https://webbuilder.tom-1e4.workers.dev/hinnasto.html#tilaa">Tilaa omat sivut</a></p>
+</div></footer></body></html>

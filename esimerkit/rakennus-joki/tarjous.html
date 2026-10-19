@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex,follow"/>
+<meta name="description" content="Lähetä tarjouspyyntö rakennusurakasta."/>
+<title>Tarjouspyyntö | Rakennus Joki Oy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="wb-demo-banner">
+  <div class="wb-demo-banner-inner">
+    <p><strong>Esimerkkisivusto</strong> · Näin voisi näyttää rakennusyrityksen paketti (6 sivua, galleria, SEO). Hintaesimerkki <strong>594 €</strong> (alv 0 %). <a href="https://webbuilder.tom-1e4.workers.dev/hinnasto.html#tilaa">Tilaa vastaava Webbuilderilta →</a></p>
+    <a class="wb-demo-back" href="../../kotisivut-rakennusyritykselle.html">← Takaisin esittelysivulle</a>
+  </div>
+</div><header class="site-header"><div class="wrap header-row">
+<a class="logo" href="index.html">Rakennus Joki</a>
+<nav aria-label="Päävalikko"><a href="index.html">Etusivu</a><a href="palvelut.html">Palvelut</a><a href="referenssit.html">Referenssit</a><a href="prosessi.html">Prosessi</a><a href="meista.html">Meistä</a><a href="tarjous.html" aria-current="page">Tarjous</a></nav>
+</div></header>
+<main class="wrap section">
+  <h1 class="page-title">Tarjouspyyntö</h1>
+  <p class="muted" style="max-width:36rem">Kerro kohde ja toiveet. Palaamme 1–2 arkipäivässä ja sovimme katselmuksen. Voit myös soittaa +358 40 222 3344.</p>
+  <form class="form" style="margin-top:1.5rem" action="#" method="get" onsubmit="event.preventDefault();alert('Esimerkkilomake — tilaa oikeat sivut Webbuilderilta.');">
+    <div><label for="n">Nimi / yritys *</label><input id="n" required/></div>
+    <div><label for="p">Puhelin *</label><input id="p" type="tel" required/></div>
+    <div><label for="e">Sähköposti *</label><input id="e" type="email" required/></div>
+    <div><label for="t">Urakan tyyppi</label>
+      <select id="t"><option>Uudisrakentaminen</option><option>Korjaus / remontti</option><option>Taloyhtiö</option><option>Muu</option></select>
+    </div>
+    <div><label for="l">Kohteen sijainti</label><input id="l" placeholder="esim. Jyväskylä, Palokka"/></div>
+    <div><label for="m">Kuvaus *</label><textarea id="m" required placeholder="Neliöt, aikataulu, budjettihaarukka…"></textarea></div>
+    <button class="btn" type="submit">Lähetä tarjouspyyntö</button>
+  </form>
+</main>
+<footer class="site-footer"><div class="wrap">
+<p><strong>Rakennus Joki Oy</strong> · Y-tunnus 4567890-1 · Jyväskylä / Keski-Suomi</p>
+<p>Esimerkkirakennusliike Webbuilder-demoa varten. <a href="https://webbuilder.tom-1e4.workers.dev/hinnasto.html#tilaa">Tilaa omat sivut</a></p>
+</div></footer></body></html>

@@ -60,4 +60,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://webbuilder.tom-1e4.workers.dev/esimerkit/aava-konsultointi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://webbuilder.tom-1e4.workers.dev/esimerkit/studio-lumi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://webbuilder.tom-1e4.workers.dev/esimerkit/hammasstudio-aura/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://webbuilder.tom-1e4.workers.dev/esimerkit/koti-kaupunki/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://webbuilder.tom-1e4.workers.dev/esimerkit/rakennus-joki/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://webbuilder.tom-1e4.workers.dev/esimerkit/meri-laki/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
